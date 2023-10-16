@@ -1,0 +1,407 @@
+:root{
+    --grey: #757575
+}
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* GLOBAL START */
+.p-15{
+    padding: 15px;
+}
+.mr-15{
+    margin-right: 15px;
+}
+
+
+/* GLOBAL END */
+/* NAV START */
+
+nav{
+    overflow: auto;
+    padding: 16px;
+    max-width: 20%;
+    height: 100%;
+    position: fixed;
+    
+}
+nav .nav-img{
+    height: 150px;
+    width: 150px;
+}
+nav .nav-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+nav h4{
+    font-size: 20px;
+    margin: 15px 0;
+}
+nav p{
+    font-size: 15px;
+    color: var(--grey);
+    margin: 15px 0;
+} 
+nav ul li{
+    padding: 10px 0;
+}
+nav ul li a{
+    color: black;
+}
+nav .nav-icons{
+    margin: 20px 0;
+    font-size: 18px;
+}
+/* NAV END */
+/* HEADER START */
+header{
+    background-color: #f1f1f1;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+header .filter{
+    margin: 16px 0;
+    padding: 16px 0;
+}
+header .filter *{
+    display: inline-block;
+}
+header .filter span{
+    padding: 8px 16px;
+}
+header .filter ul li{
+    padding: 8px 16px;
+    background-color: white;
+}
+header hr{
+    display: block;
+    border: none;
+    background-color: gray;
+    height: 5px;
+    margin: 15px 0;
+}
+
+/* HEADER END */
+/* MAIN START */
+main{
+    margin-left: 20%;
+    margin-right: 10%;
+    background-color: #f1f1f1;
+    overflow: auto;
+}
+
+/* PROJECTS START */
+#projects .container{
+    overflow: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap:15px;
+}
+#projects .container .box{
+    /* max-width: 400px; */
+    width: 100%;
+    background-color: white;
+}
+#projects .container .box img{
+    width: 100%;
+}
+#projects .container .box h3{
+    margin: 16px;
+}
+#projects .container .box p{
+    margin: 16px;
+}
+#projects .pagination ul{
+    text-align: center;
+    margin: 30px 0;
+}
+#projects .pagination ul li{
+    display: inline;
+    padding: 8px 16px;
+}
+#projects .pagination ul li:hover{
+    background-color: black;
+    color: white;
+}
+/* PROJECTS END */
+/* ABOUT START */
+
+#about .images{
+    display: flex;
+    gap:15px;
+}
+#about .images img{
+    width: 100%;
+}
+#about .me h2{
+    margin: 15px 0;
+}
+#about .skills h2{
+    margin: 15px 0;
+    font-weight: lighter;
+}
+#about .skills h3{
+    margin: 10px 0;
+    font-weight: lighter;
+}
+#about .skills .bar{
+    background-color: rgb(192, 192, 192);
+    width: 100%;
+}
+#about .skills .bar .photography{
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background-color: gray;
+    height: 100%;
+    width: 95%; 
+}
+#about .skills .bar .web-design{
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background-color: gray;
+    height: 100%;
+    width: 85%; 
+}
+#about .skills .bar .photoshop{
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background-color: gray;
+    height: 100%;
+    width: 80%; 
+}
+#about .skills .btn{
+    display: inline-block;
+    padding: 16px 8px;
+    background-color: gray;
+    color: white;
+    margin: 20px 0;
+}
+#about .skills .btn:hover{
+    background-color: rgb(192, 192, 192);
+    color: black;
+
+}
+#about .skills .btn a i{
+    margin-right: 16px;
+}
+/* ABOUT END */
+/* PRICING START */
+#pricing h2{
+    font-weight: lighter;
+    margin: 15px 0;
+}
+#pricing .box{
+    display: flex;
+    justify-content: space-between;
+    gap:15px;
+    text-align: center;
+}
+#pricing .box .basic{
+    width: 100%;
+}
+#pricing .box .pro{
+    width: 100%;
+}
+#pricing .box .premium{
+    width: 100%;
+}
+#pricing .box .h{
+    font-size: 30px;
+    margin: 10px 0;
+}
+#pricing .box ul{
+    border: 1px solid rgb(204 204 204)
+}
+#pricing .box .basic:hover .lihb{
+    background-color: black;
+}
+#pricing .box .basic:hover .lihg{
+    background-color: #009688;
+}
+#pricing .box .pro:hover .lihg{
+    background-color: #009688;
+}
+#pricing .box .premium:hover .lihb{
+    background-color: black;
+}
+#pricing .box .premium:hover .lihg{
+    background-color: #009688;
+}
+#pricing .box ul li{
+    background-color: rgb(249, 249, 249);
+    border-bottom: 1px solid rgb(221 221 221);
+    width: 100%;
+    padding: 16px 0;
+}
+#pricing .box ul li:first-of-type{
+    font-size: 24px;
+    padding: 32px 0;
+    color: white;
+}
+#pricing .box .lihb{
+    background-color: gray;
+}
+#pricing .box .lihg{
+    background-color: #60bab2;
+}
+#pricing .box ul li:last-of-type{
+    background-color: #f1f1f1;
+}
+#pricing .box .btn{
+    display: inline-block;
+    padding: 10px 20px;
+}
+#pricing .box .btn a{
+    color: white;
+}
+
+/* PRICING END */
+/* CONTACT START */
+
+#contact{
+    background-color: rgb(192, 192, 192);
+}
+#contact h2{
+    margin-bottom: 20px;
+}
+#contact .box{
+    display: flex;
+    justify-content: center;
+}
+#contact hr{
+    border: none;
+    background-color: white;
+    height: 1px;
+    margin: 30px 0;;
+}
+#contact .box .sub{
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 16px 0;
+}
+#contact .box .sub i{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+#contact .box .email,#contact .box .phone{
+    background-color: gray;
+}
+#contact .box .location{
+    background-color: #009688;
+}
+#contact .form{
+    display: flex;
+    flex-direction: column;
+}
+#contact .form input{
+    height: 40px;
+    border: 1px solid rgb(221 221 221);
+}
+#contact .form label{
+    margin-top: 15px;
+}
+#contact .form .submit{
+    display: inline-block;
+    background-color: black;
+    padding: 20px;
+    width: 200px;
+    margin-top: 20px;
+}
+#contact .form .submit:hover{
+    background-color: rgb(204, 204, 204);
+}
+#contact .form .submit:hover .btn-a{
+    color: black;
+}
+#contact .form .submit a{
+    color: white;
+}
+/* CONTACT END */
+/* MAIN END */
+/* FOOTER START */
+
+footer{
+    margin-left: 20%;
+    margin-right: 10%; 
+}
+footer .box{
+    background-color: rgb(97, 97, 97);
+    color: white;
+    padding: 30px 15px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+
+}
+footer .box h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+footer .box a{
+    color: white;
+    text-decoration: underline;
+}
+footer .box .footer{
+    display: inline-block;
+    width: 100%;
+}
+footer .box .blog{
+    display: inline-block;
+    width: 100%;
+}
+footer .box .blog .lorem{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(2, 25px);
+    gap:5px;
+
+}
+footer .box .blog .lorem:hover{
+    background-color: rgb(204, 204, 204);
+
+}
+footer .box .blog .ipsum:hover{
+    background-color: rgb(204, 204, 204);
+
+}
+footer .box .blog img{
+    grid-area: 1 / 1 / 3 / 2;
+}
+footer .box .blog .ipsum{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(2, 25px);
+    gap:5px
+}
+footer .box .blog img {
+    max-width: 50px;
+}
+footer .box .tag{
+    display: inline-block;
+    width: 100%;
+}
+footer .powered{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+footer .box .tag span{
+    background-color: rgb(158, 158, 158);
+    display: inline-block;
+    padding: 4px 8px;
+    color: black;
+    margin: 5px;
+}
+
+/* FOOTER END */
